@@ -1,0 +1,23 @@
+{
+  "login": "تسجيل الدخول",
+  "phone": "رقم الجوال",
+  "password": "كلمه المرور",
+  "forgot_password": "نسيت كلمة المرور؟",
+  "register": "تسجيل جديد",
+  "or": "او",
+  "dont_have_account": "ليس لديك حساب؟",
+  "lets_login": "لنقم بتسجيل الدخول",
+  "back_to_login": "العودة لتسجيل الدخول",
+"enter_the_registered_phone_number": "ادخل رقم الجوال المسجل",
+  "enter_phone_number": "ادخل رقم الجوال",
+  "send_otp": "ارسال كود التحقق",
+  "enter_otp": "ادخل كود التحقق",
+  "resend_otp": "ارسال مرة اخرى",
+  "send": "ارسال",
+  "we_will_send_a_otp": "سوف نقوم بارسال كود التحقق",
+  "enter_correct_phone_number": "ادخل رقم جوال صحيح",
+  "verify": "تحقق",
+  "phone_or_password_incorrect": "رقم الجوال او كلمة المرور غير صحيحة",
+  "please_enter_password": "الرجاء ادخال كلمه المرور"
+
+}
