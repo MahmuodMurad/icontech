@@ -22,7 +22,15 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "add_notes": MessageLookupByLibrary.simpleMessage("Add notes"),
+        "add_to_cart": MessageLookupByLibrary.simpleMessage("Add to cart"),
+        "additional_notes":
+            MessageLookupByLibrary.simpleMessage("Additional notes"),
         "back_to_login": MessageLookupByLibrary.simpleMessage("Back to login"),
+        "branch_address":
+            MessageLookupByLibrary.simpleMessage("Branch address"),
+        "calories": MessageLookupByLibrary.simpleMessage("Calories"),
+        "close": MessageLookupByLibrary.simpleMessage("Close"),
         "dont_have_account":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "enter_correct_phone_number":
@@ -37,17 +45,25 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forgot password?"),
         "lets_login": MessageLookupByLibrary.simpleMessage("Let\'s login"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "new_shormeaah": MessageLookupByLibrary.simpleMessage("New Shormeaah"),
+        "open": MessageLookupByLibrary.simpleMessage("Open"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "phone": MessageLookupByLibrary.simpleMessage("Phone number"),
         "phone_or_password_incorrect": MessageLookupByLibrary.simpleMessage(
             "The phone or Password isn\'t correct"),
+        "pieces": MessageLookupByLibrary.simpleMessage("Piece"),
         "please_enter_password":
             MessageLookupByLibrary.simpleMessage("Please enter password"),
+        "price_you_choose":
+            MessageLookupByLibrary.simpleMessage("Price you choose"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
         "resend_otp": MessageLookupByLibrary.simpleMessage("Resend OTP"),
+        "rs": MessageLookupByLibrary.simpleMessage("RS"),
         "send": MessageLookupByLibrary.simpleMessage("Send"),
         "send_otp": MessageLookupByLibrary.simpleMessage("Send OTP"),
+        "time_to_arrive":
+            MessageLookupByLibrary.simpleMessage("Time to arrive"),
         "verify": MessageLookupByLibrary.simpleMessage("Verify"),
         "we_will_send_a_otp":
             MessageLookupByLibrary.simpleMessage("We will send a OTP to")

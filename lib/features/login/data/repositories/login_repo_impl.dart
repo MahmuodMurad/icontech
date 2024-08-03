@@ -33,7 +33,7 @@ class LoginRepoImpl extends LoginRepo {
       debugPrint('Response Status: ${response['status']}');
       debugPrint('Response Data: ${response.toString()}');
 
-      final accessToken = response['access_token'];
+      final accessToken = response['data']['access_token'];
       await storage.write(key: 'accessToken', value: accessToken);
 
       return right(response['msg']);
@@ -41,14 +41,21 @@ class LoginRepoImpl extends LoginRepo {
       if (e.response != null) {
         debugPrint('DioError Status Code: ${e.response!.statusCode}');
         debugPrint('DioError Data: ${e.response!.data}');
-        if (e.response!.statusCode == 422 && e.response!.data['data']['validation_errors'] != null) {
-          final validationErrors = e.response!.data['data']['validation_errors'] as Map<String, dynamic>;
-          final formattedErrors = validationErrors.map((key, value) => MapEntry(key, List<String>.from(value)));
+        if (e.response!.statusCode == 422 &&
+            e.response!.data['data']['validation_errors'] != null) {
+          final validationErrors = e.response!.data['data']['validation_errors']
+          as Map<String, dynamic>;
+          final formattedErrors = validationErrors
+              .map((key, value) => MapEntry(key, List<String>.from(value)));
 
           return left(ServerFailure(
             'Validation Errors',
             validationErrors: formattedErrors,
           ));
+        } else if (e.response!.statusCode == 401) {
+          final errorMessage = e.response!.data['msg'] ?? 'Unauthorized access';
+          debugPrint('Error Message: $errorMessage');
+          return left(ServerFailure(errorMessage));
         } else {
           errorMessage = e.response!.data['msg'] ?? 'Unknown error';
           debugPrint('Error Message: $errorMessage');
@@ -65,5 +72,3 @@ class LoginRepoImpl extends LoginRepo {
     }
   }
 }
-
-

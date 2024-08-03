@@ -1,11 +1,7 @@
-
 import 'package:dartz/dartz.dart';
-
 import '../../../../core/errors/failure.dart';
+import '../models/location_model.dart';
 
 abstract class HomeRepo {
-  // Future<Either<Failure, List<BookModel>>> fetchNewestBooks();
-  // Future<Either<Failure, List<BookModel>>> fetchMainBooks();
-  // Future<Either<Failure, List<BookModel>>> fetchRelatedBooks(
-  //     {required String category});
+  Future<Either<Failure, List<Location>>> fetchLocations(double lat, double lng, int companyId);
 }

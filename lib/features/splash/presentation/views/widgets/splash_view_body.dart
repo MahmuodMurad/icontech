@@ -3,6 +3,9 @@ import 'package:icontech/core/utils/app_ruters.dart';
 import 'package:icontech/core/utils/assets/asset_images.dart';
 import 'package:icontech/features/splash/presentation/views/widgets/sliding_text.dart';
 import 'package:go_router/go_router.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+
+import '../../../../../main.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -15,19 +18,19 @@ class _SplashViewBodyState extends State<SplashViewBody>
     with SingleTickerProviderStateMixin {
   late AnimationController animationController;
   late Animation<Offset> slidingAnimation;
+
+
   @override
   void initState() {
     super.initState();
     initSlidingAnimation();
-
-    navigateToHome();
+    navigateToNextScreen();
   }
 
   @override
   void dispose() {
-    super.dispose();
-
     animationController.dispose();
+    super.dispose();
   }
 
   @override
@@ -37,7 +40,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Center(child: Image.asset(AssetsImg.logo)),
-        SlidingText(slidingAnimation: slidingAnimation)
+        SlidingText(slidingAnimation: slidingAnimation),
       ],
     );
   }
@@ -55,12 +58,14 @@ class _SplashViewBodyState extends State<SplashViewBody>
     animationController.forward();
   }
 
-  void navigateToHome() {
-    Future.delayed(
-      const Duration(seconds: 5),
-      () {
-        GoRouter.of(context).push(AppRouters.kLoginView);
-      },
-    );
+  void navigateToNextScreen() async {
+    await Future.delayed(const Duration(seconds: 5));
+    String? token = await storage.read(key: 'accessToken');
+    print(token);
+    if (token != null) {
+      AppRouters.router.pushReplacement(AppRouters.kHomeView);
+    } else {
+      AppRouters.router.pushReplacement(AppRouters.kLoginView);
+    }
   }
 }

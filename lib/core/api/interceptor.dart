@@ -25,7 +25,7 @@ class AuthenticatorInterceptor extends Interceptor {
 
   @override
   void onError(DioException err, ErrorInterceptorHandler handler) async {
-    if (err.response?.statusCode == 401) {
+    if (err.response?.statusCode == 404) {
       final refreshToken = await storage.read(key: 'refreshToken');
       if (refreshToken != null) {
         try {

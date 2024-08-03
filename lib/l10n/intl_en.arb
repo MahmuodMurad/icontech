@@ -18,7 +18,18 @@
   "enter_correct_phone_number": "Enter correct phone number",
   "verify": "Verify",
   "phone_or_password_incorrect": "The phone or Password isn't correct",
-  "please_enter_password": "Please enter password"
-
+  "please_enter_password": "Please enter password",
+  "branch_address": "Branch address",
+  "time_to_arrive": "Time to arrive",
+  "open": "Open",
+  "close": "Close",
+  "new_shormeaah": "New Shormeaah",
+  "rs": "RS",
+  "price_you_choose": "Price you choose",
+  "calories": "Calories",
+  "pieces": "Piece",
+  "additional_notes": "Additional notes",
+  "add_notes": "Add notes",
+"add_to_cart": "Add to cart"
 
 }

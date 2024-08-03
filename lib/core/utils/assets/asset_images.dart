@@ -5,12 +5,8 @@ class AssetsImg {
   static String verifyPassword = '$imgPath/verify_password.png';
   static String secondPageView = '$imgPath/second_view.png';
   static String thirdPageView = '$imgPath/third_view.png';
-  static String kfsLogo = '$imgPath/kfs_logo.png';
-  static String uccdLogo = '$imgPath/uccd_logo.png';
   static String loginBackground = '$imgPath/Login_background.png';
   static String pageViewBackground = '$imgPath/page_view_background.png';
-  static String splashKfsLogo = '$imgPath/splash_kfslogo.png';
-  static String splashUccdLogo = '$imgPath/splash_uccdlogo.png';
   static String splashUp = '$imgPath/splash_up.png';
   static String splashDown = '$imgPath/splash_down.png';
   static String qrImage = '$imgPath/qr.png';
@@ -24,4 +20,5 @@ class AssetsImg {
   static String blacklistImage = '$imgPath/blacklist.png';
   static String femaleImage = '$imgPath/female.png';
   static String maleImage = '$imgPath/male.png';
+  static String markerImage = '$imgPath/marker.png';
 }

@@ -18,6 +18,19 @@
   "enter_correct_phone_number": "ادخل رقم جوال صحيح",
   "verify": "تحقق",
   "phone_or_password_incorrect": "رقم الجوال او كلمة المرور غير صحيحة",
-  "please_enter_password": "الرجاء ادخال كلمه المرور"
+  "please_enter_password": "الرجاء ادخال كلمه المرور",
+  "branch_address": "عنوان الفرع",
+  "time_to_arrive": "الوصول الى الموقع",
+  "open": "مفتوح",
+  "close": "مغلق",
+  "new_shormeaah": "جديد شورميه",
+  "rs": "رس",
+  "price_you_choose": "السعر حسب اختيارك",
+  "calories": "سعر حراري",
+  "pieces": "قطعه",
+  "additional_notes": "ملاحظات اضافية؟",
+  "add_notes": "اضافة ملاحظه",
+  "add_to_cart": "اضافه الي السلة"
+
 
 }

@@ -22,8 +22,15 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "add_notes": MessageLookupByLibrary.simpleMessage("اضافة ملاحظه"),
+        "add_to_cart": MessageLookupByLibrary.simpleMessage("اضافه الي السلة"),
+        "additional_notes":
+            MessageLookupByLibrary.simpleMessage("ملاحظات اضافية؟"),
         "back_to_login":
             MessageLookupByLibrary.simpleMessage("العودة لتسجيل الدخول"),
+        "branch_address": MessageLookupByLibrary.simpleMessage("عنوان الفرع"),
+        "calories": MessageLookupByLibrary.simpleMessage("سعر حراري"),
+        "close": MessageLookupByLibrary.simpleMessage("مغلق"),
         "dont_have_account":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
         "enter_correct_phone_number":
@@ -38,17 +45,25 @@ class MessageLookup extends MessageLookupByLibrary {
         "lets_login":
             MessageLookupByLibrary.simpleMessage("لنقم بتسجيل الدخول"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "new_shormeaah": MessageLookupByLibrary.simpleMessage("جديد شورميه"),
+        "open": MessageLookupByLibrary.simpleMessage("مفتوح"),
         "or": MessageLookupByLibrary.simpleMessage("او"),
         "password": MessageLookupByLibrary.simpleMessage("كلمه المرور"),
         "phone": MessageLookupByLibrary.simpleMessage("رقم الجوال"),
         "phone_or_password_incorrect": MessageLookupByLibrary.simpleMessage(
             "رقم الجوال او كلمة المرور غير صحيحة"),
+        "pieces": MessageLookupByLibrary.simpleMessage("قطعه"),
         "please_enter_password":
             MessageLookupByLibrary.simpleMessage("الرجاء ادخال كلمه المرور"),
+        "price_you_choose":
+            MessageLookupByLibrary.simpleMessage("السعر حسب اختيارك"),
         "register": MessageLookupByLibrary.simpleMessage("تسجيل جديد"),
         "resend_otp": MessageLookupByLibrary.simpleMessage("ارسال مرة اخرى"),
+        "rs": MessageLookupByLibrary.simpleMessage("رس"),
         "send": MessageLookupByLibrary.simpleMessage("ارسال"),
         "send_otp": MessageLookupByLibrary.simpleMessage("ارسال كود التحقق"),
+        "time_to_arrive":
+            MessageLookupByLibrary.simpleMessage("الوصول الى الموقع"),
         "verify": MessageLookupByLibrary.simpleMessage("تحقق"),
         "we_will_send_a_otp":
             MessageLookupByLibrary.simpleMessage("سوف نقوم بارسال كود التحقق")
